@@ -189,8 +189,11 @@ It suggests that some datas in 2021 are lost or not recorded. So the mean and th
 _Look at the help pages for the `mean()` and `median()` commands to see what the input argument `na.rm` does. Edit your code from exercise h so that it computes the summary statistics where data is available._
 
 **Write your answer here**
-
-(Not clear yet)
+visitors %>% 
+  summarise(
+    mean_2021 = mean(n_2021, na.rm = TRUE),
+    med_2021 = median(n_2021,na.rm = TRUE)
+  )
 
 
 ## Question 7
