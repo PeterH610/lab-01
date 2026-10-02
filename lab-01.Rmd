@@ -217,11 +217,12 @@ It suggests that we should pefer to both datas, in order to get a more valid con
 ### Exercise l.
 
 ```{r Q8}
-#visitors %>% 
-#  summarise(
-#     __________,
-#     __________,
-#  )
+visitors %>%
+  group_by(setting) %>%
+  summarise(
+     max_2021 = max(n_2021),
+     min_2021 = min(n_2021)
+  )
 ```
 
 ## Question 9
