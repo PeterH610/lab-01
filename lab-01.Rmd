@@ -313,5 +313,5 @@ visitors_with_nations %>%
   group_by(admission) %>%
   summarise(mean_percentage_change = mean(percentage_change, na.rm = TRUE)) %>%
   arrange(mean_percentage_change)
-# this one is done by the heip of AI on " na.rm = TRUE"
+# this one is done by the help of AI on " na.rm = TRUE" about how to ignore NA
 ```
